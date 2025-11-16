@@ -2,7 +2,7 @@
 #include <iomanip>
 #include <cstring>
 using namespace std;
-void sickPerson(int arr[],int len, int lowAge, int highAge)
+void sickPerson(int arr[], int len, int lowAge, int highAge)
 {
     int count = 0;
     for (int i = 0; i < len; i++)
@@ -19,15 +19,15 @@ int main()
     int n;
     cin >> n;
     int arr[n];
-    int  len = sizeof(arr)/sizeof(arr[0]);
+    int len = sizeof(arr) / sizeof(arr[0]);
     for (int i = 0; i < n; i++)
     {
         cin >> arr[i];
     }
-    sickPerson(arr,len, 0, 18);
-    sickPerson(arr,len, 19, 35);
-    sickPerson(arr,len, 36, 60);
-    sickPerson(arr,len, 61, 200);
+    sickPerson(arr, len, 0, 18);
+    sickPerson(arr, len, 19, 35);
+    sickPerson(arr, len, 36, 60);
+    sickPerson(arr, len, 61, 200);
 
     return 0;
 }

@@ -29,7 +29,7 @@ int main()
             }
         }
     }
-    cout << count <<" ";
+    cout << count << " ";
     cout << sum << endl;
 
     return 0;

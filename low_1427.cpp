@@ -31,7 +31,7 @@ int main()
     {
         sum += arr[i] * 0.9;
     }
-    cout<<fixed<<setprecision(1)<<sum<<endl;
+    cout << fixed << setprecision(1) << sum << endl;
 
     return 0;
 }
