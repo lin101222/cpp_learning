@@ -1,0 +1,36 @@
+#include <iostream>
+#include <vector>
+#include <iomanip>
+using namespace std;
+int main()
+{
+    int n, x;
+    cin >> n >> x;
+    vector<int> arr;
+    for (int i = 0; i < n; i++)
+    {
+        int a;
+        cin >> a;
+        arr.push_back(a);
+    }
+    for (int i = 0; i < n - 1; i++)
+    {
+        for (int j = 0; j < n - i - 1; j++)
+        {
+            if (arr[j] > arr[j + 1])
+            {
+                int t = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = t;
+            }
+        }
+    }
+    int sum = 0;
+    for (int i = x; i < n - x; i++)
+    {
+        sum += arr[i];
+    }
+    cout << fixed << setprecision(1) << sum * 1.0 / (n - 2 * x) << endl;
+
+    return 0;
+}
